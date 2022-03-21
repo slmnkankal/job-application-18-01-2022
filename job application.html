@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <style>
+        input{
+            background-color: darkgoldenrod;
+        }
+        #userinfo{
+            border-top: 5px solid rgb(20, 60, 80);
+            background-color: rgb(2, 70, 70, 0.7);
+        }
+        #genderInfo{
+            border-top: 5px solid rgb(20, 60, 80);
+            background-color: darkkhaki;
+        }
+        #education{
+            background-color: darkkhaki;
+        }
+        #pathInfo{
+            border-top: 5px solid rgb(20, 60, 80);
+            background-color: rgb(2, 70, 70, 0.7);
+        }
+        #cvInfo{
+            border-top: 5px solid rgb(20, 60, 80);
+            background-color: darkkhaki;
+
+        }
+        #salary{
+            background-color: rgb(2, 70, 70, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>About You</h1>
+        <div id="userinfo">
+            <br>
+            <label for="name">Name*:</label>
+            <input type="text" name="username" id="name" placeholder="Enter Your Name..." required>
+            <br><br>
+            <label for="surname">Surname*:</label>
+            <input type="text" name="username" id="surname" placeholder="Enter Your Surname..."required>
+            <br><br>
+            <!--<label for="pass">Password:</label>
+            <input type="password" name="password" id="pass" placeholder="Enter Your Password...">
+            <br><br>-->
+            <label for="eposta">Email*:</label>
+            <input type="email" name="email" id="eposta" placeholder="example@example.com" required>
+            <br><br>
+            <label for="tel">Phone*:</label>
+            <input type="tel" name="phone" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            placeholder="xxx-xxx-xx-xx" required>
+            <br><br>
+            <label for="year">Age:</label>
+            <input type="number" name="age" id="year" min="7" max="70">
+            <br><br>
+            <label for="">Your Birth Date:</label>
+            <input type="date" name="date" id="doğum" min="2020-04-20" max="2025-05-20" value="2025-05-20">
+            <br><br>
+        </div>
+        <br>
+        <div id="genderInfo">
+            <br>
+            <!--<h5>Gender</h5>-->
+            <label for="gen1">Gender:</label>
+            <br>
+            <input type="radio" name="gender" id="gen1" value="Male">
+            <label for="gen1">Male</label>
+
+            <input type="radio" name="gender" id="gen2" value="Female">
+            <label for="gen2">Female</label>
+            <br>
+        </div>
+        
+        <div id="education">
+            <!--<h5>Education</h5>-->
+            <label for="">Education:</label>
+            <br>
+            <input type="checkbox" name="education" id="Associate's Degree" value="Associate's Degree">
+            <label for="Associate's Degree">Associate's Degree</label>
+
+            <input type="checkbox" name="education" id="Bachelor's Degree" value="Bachelor's Degree">
+            <label for="Bachelor's Degree">Bachelor's Degree</label>
+
+            <input type="checkbox" name="education" id="PhD" value="PhD" checked>
+            <label for="PhD">PhD</label>
+            <br><br>
+        </div>
+        <br>
+        <div id="pathInfo">
+            <br>
+            <label for="">Professional Path:</label>
+            <select name="" id="">
+                <option value="bacdend">Backend Developer</option>
+                <option value="frontend" selected>Frontend Developer</option>
+                <option value="data analyst">Data Analyst</option>
+                <option value="cloud engineer">Cloud Engineer</option>
+            </select>
+            <br>
+        </div>
+        
+        <div id="salary">
+            <label for="vol">Salary Expectation(1000$):
+            <input type="range" id="vol" name="vol" min="0" max="10">
+            [1-10]</label>
+            <br><br>
+        </div>
+        <br>
+        <div id="cvInfo">
+            <br>
+            <label for="dosya">Upload Your CV:</label>
+            <input type="file" name="file" id="dosya" multiple>
+            <br><br>
+        </div>
+        <br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+        <br>
+
+    </form>
+</body>
+</html>
